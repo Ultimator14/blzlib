@@ -8,7 +8,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <systemd/sd-bus.h>
+#include <elogind/systemd/sd-bus.h>
 #include <time.h>
 #include <unistd.h>
 

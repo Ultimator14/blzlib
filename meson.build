@@ -2,11 +2,11 @@ project('blzlib', 'c',
 	version: '0.0.2',
 	license: 'GPL2')
 
-libsystemd = dependency('libsystemd')
+elogind = dependency('elogind')
 
 blzlib = both_libraries('blzlib',
 	'blzlib.c', 'blzlib_util.c', 'blzlib_msgs.c', 'blzlib_log.c',
-	dependencies: libsystemd,
+	dependencies: elogind,
 	install: true)
 
 install_headers('blzlib.h', 'blzlib_util.h', 'blzlib_log.h')
@@ -17,7 +17,7 @@ pkg_mod.generate(blzlib)
 executable('blz-nordic-uart',
 	'examples/nordic-uart.c',
 	link_with: blzlib,
-	dependencies: libsystemd)
+	dependencies: elogind)
 
 executable('blz-read-manuf-name',
 	'examples/read-manuf-name.c',

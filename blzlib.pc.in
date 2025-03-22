@@ -5,7 +5,7 @@ libdir=${exec_prefix}/lib
 
 Name: blzlib
 Description: @CPACK_PACKAGE_DESCRIPTION_SUMMARY@
-Requires: libsystemd
+Requires: elogind
 Version: @CPACK_PACKAGE_VERSION@
 Cflags: -I${includedir}
 Libs: -L${libdir} -lblzlib

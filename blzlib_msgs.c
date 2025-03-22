@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <systemd/sd-bus.h>
+#include <elogind/systemd/sd-bus.h>
 
 #include "blzlib.h"
 #include "blzlib_internal.h"

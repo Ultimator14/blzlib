@@ -25,7 +25,7 @@ add_executable(blz-scan-discover
 	examples/scan-discover.c)
 
 find_package(PkgConfig REQUIRED)
-pkg_search_module(LIBSYSTEMD REQUIRED libsystemd)
+pkg_search_module(LIBSYSTEMD REQUIRED libelogind)
 
 # Add the build directory for the examples to link the currently built library
 link_directories(${PROJECT_BINARY_DIR})

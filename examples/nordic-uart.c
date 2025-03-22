@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#include <systemd/sd-bus.h>
-#include <systemd/sd-event.h>
+#include <elogind/systemd/sd-bus.h>
+#include <elogind/systemd/sd-event.h>
 
 #include "blzlib.h"
 #include "blzlib_log.h"
